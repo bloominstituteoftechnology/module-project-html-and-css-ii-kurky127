@@ -69,8 +69,10 @@ p, h1, h2, h3, h4, h5, h6 {
     /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
     Make them display as inline block, instead of block.
     This will make them render on the same line. */
-    .inline-container {
-      display: inline-block;
+    #headerTop {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
     }
     /* 👉 Task 5- Target the spans that are nested inside the id headerTop.
     Make them have some margin on the right.
@@ -94,8 +96,10 @@ p, h1, h2, h3, h4, h5, h6 {
     Make them display as inline block, instead of block.
     This will cause them to render on the same line.
     You can consolidate this rule with the one on step. 4 */
-    #headerBottom>div {
-      display: inline-block;
+    #headerBottom {
+      display: flex;
+      align-items: baseline;
+      
     }
     /* 👉 Task 9- Target the "Compose" button, although note it's a div instead an actual button.
     Give it color, bold text, background, padding, border radius, margin right, and a cursor of pointer. */
@@ -129,8 +133,8 @@ p, h1, h2, h3, h4, h5, h6 {
     /* 👉 Task 12- Target all divs directly nested inside elements with a class of email,
     and make them display as inline-block elements.
     This will make each email render all its details in the same line*/
-    .email div {
-      display: inline-block;
+    .email{
+     display: flex; 
     }
     /* 👉 Task 13- Target the elements with a class of email.
     Give them some padding, bigger padding to the left, and a bottom border of very light grey. */
